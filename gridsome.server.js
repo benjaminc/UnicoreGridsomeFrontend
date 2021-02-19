@@ -10,7 +10,7 @@ module.exports = function (api) {
   // The loadSource method is called at the beginning of the build process, and is where we load our custom data into the GraphQL data store
   api.loadSource(async ({ addCollection, store }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-    const { data } = await axios.get('https://benjamin-unicore-gridsome-app.azurewebsites.net.azurewebsites.net/api/data/content')
+    const { data } = await axios.get('https://benjamin-unicore-gridsome-app.azurewebsites.net/api/data/content')
 
     // Each collection results in two nodes under the main GraphQL query node.  One with the name we provide ('umbraco' for the one here), which can be used to query a single item, and another called 'allUmbraco' which provides access to all nodes.
     const umbraco = addCollection('Umbraco')
