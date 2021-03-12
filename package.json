@@ -7,6 +7,7 @@
     "build": "gridsome build"
   },
   "dependencies": {
+    "algoliasearch": "^4.8.6",
     "axios": "^0.21.1",
     "gridsome": "^0.7.0"
   }
